@@ -1,0 +1,87 @@
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# compiled output
+/backend/aviatur-api/dist
+/backend/aviatur-api/node_modules
+
+# Logs
+/backend/aviatur-api/logs
+/backend/aviatur-api/*.log
+/backend/aviatur-api/npm-debug.log*
+/backend/aviatur-api/yarn-debug.log*
+/backend/aviatur-api/yarn-error.log*
+/backend/aviatur-api/lerna-debug.log*
+
+# OS
+/backend/aviatur-api/.DS_Store
+
+# Tests
+/backend/aviatur-api/coverage
+/backend/aviatur-api/.nyc_output
+
+# IDEs and editors
+/backend/aviatur-api/.idea
+/backend/aviatur-api/.project
+/backend/aviatur-api/.classpath
+/backend/aviatur-api/.c9/
+/backend/aviatur-api/*.launch
+/backend/aviatur-api/.settings/
+/backend/aviatur-api/*.sublime-workspace
+
+# IDE - VSCode
+/backend/aviatur-api/.vscode/*
+/backend/aviatur-api/!.vscode/settings.json
+/backend/aviatur-api/!.vscode/tasks.json
+/backend/aviatur-api/!.vscode/launch.json
+/backend/aviatur-api/!.vscode/extensions.json
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/frontend/aviatur-app/dist
+/frontend/aviatur-app/tmp
+/frontend/aviatur-appout-tsc
+# Only exists if Bazel was run
+/frontend/aviatur-appbazel-out
+
+# dependencies
+/frontend/aviatur-app/node_modules
+
+# profiling files
+/frontend/aviatur-app/chrome-profiler-events*.json
+
+# IDEs and editors
+/frontend/aviatur-app/.idea
+/frontend/aviatur-app/.project
+/frontend/aviatur-app/.classpath
+/frontend/aviatur-app/.c9/
+/frontend/aviatur-app/*.launch
+/frontend/aviatur-app/.settings/
+/frontend/aviatur-app/*.sublime-workspace
+
+# IDE - VSCode
+/frontend/aviatur-app/.vscode/*
+/frontend/aviatur-app/!.vscode/settings.json
+/frontend/aviatur-app/!.vscode/tasks.json
+/frontend/aviatur-app/!.vscode/launch.json
+/frontend/aviatur-app/!.vscode/extensions.json
+/frontend/aviatur-app/.history/*
+
+# misc
+/frontend/aviatur-app/.sass-cache
+/frontend/aviatur-app/connect.lock
+/frontend/aviatur-app/coverage
+/frontend/aviatur-app/libpeerconnection.log
+/frontend/aviatur-app/npm-debug.log
+/frontend/aviatur-app/yarn-error.log
+/frontend/aviatur-app/testem.log
+/frontend/aviatur-app/typings
+
+# System Files
+/frontend/aviatur-app/.DS_Store
+/frontend/aviatur-app/Thumbs.db
