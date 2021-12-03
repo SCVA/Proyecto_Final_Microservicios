@@ -27,8 +27,8 @@ jobs:
         id: docker_build_bk
         uses: docker/build-push-action@v2
         with:
-          context: ./backend/aviatur-api
-          file: ./Dockerfile
+          context: ./
+          file: ./backend/aviatur-api/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/backend:latest
       
@@ -39,8 +39,8 @@ jobs:
         id: docker_build_fe
         uses: docker/build-push-action@v2
         with:
-          context: ./frontend/aviatur-app
-          file: ./Dockerfile
+          context: ./
+          file: ./frontend/aviatur-app/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/frontend:latest
           
