@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  AVIATUR_SERVICE: 'http://localhost:8080/',
+  AVIATUR_SERVICE: 'http://microserviciosud.azurewebsites.net/',
 };
