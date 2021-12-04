@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  AVIATUR_SERVICE: 'http://microserviciosud.azurewebsites.net/',
+  AVIATUR_SERVICE: 'https://microserviciosud.azurewebsites.net/',
 };
