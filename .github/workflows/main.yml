@@ -74,4 +74,4 @@ jobs:
         app-name: 'microserviciosUDFront'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_368122806a924c5cbe1c2ffd7db9558d }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_c3c234c5affe4e75ae5dc56802c7adbd }}/frontend::latest'
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_c3c234c5affe4e75ae5dc56802c7adbd }}/frontend:latest'
