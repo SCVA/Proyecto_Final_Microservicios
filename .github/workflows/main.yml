@@ -66,3 +66,12 @@ jobs:
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_09451c5220fe450eae1800369faff64f }}
         images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_1776f6f0d56d48ae87915fae69cc71fd }}/scvanegasa/backend:${{ github.sha }}'
+        
+    - name: Deploy Frontend to Azure Web App
+      id: deploy-front-to-webapp
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'microserviciosUDFront'
+        slot-name: 'production'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_cac43d4f5a4c413581fb2e570bc5029f }}
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_f4d9c5906a4245808981754b1aa57921 }}/scvanegasa/frontend:${{ github.sha }}'
