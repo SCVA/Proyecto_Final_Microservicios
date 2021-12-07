@@ -1,5 +1,12 @@
-# AVIATUR_developer_test
+# Proyecto final microservicios
 Proyecto para la visualización de resultados de búsqueda de hoteles para la compañía AVIATUR. Se encuentra compuesto por una aplicación front-end desarrollada usando el framework Angular y un API Rest elaborado mediante el framework NestJS.
+
+## Integrantes
+<ol>
+<li>Sebastian Camilo Vanegas Ayala - 20202495019</li> 
+<li>Jonathan Steven Capera Quintana - 20202495005</li> 
+<li>Daniel David Leal Lara - 20202495012</li>
+</ol>
 
 ## Especificaciones Técnicas
 
