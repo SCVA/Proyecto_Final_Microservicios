@@ -13,8 +13,8 @@ jobs:
       - name: Check Out Repo 
         uses: actions/checkout@v2
       
-      - name: Run Codacy Analysis CLI
-        uses: codacy/codacy-analysis-cli-action@master
+      #- name: Run Codacy Analysis CLI
+      #  uses: codacy/codacy-analysis-cli-action@master
       
       - name: Login to Docker Hub
         uses: docker/login-action@v1
@@ -65,7 +65,7 @@ jobs:
         app-name: 'microserviciosud'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_09451c5220fe450eae1800369faff64f }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_1776f6f0d56d48ae87915fae69cc71fd }}/scvanegasa/backend:${{ github.sha }}'
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_1776f6f0d56d48ae87915fae69cc71fd }}/scvanegasa/backend:latest'
         
     - name: Deploy Frontend to Azure Web App
       id: deploy-frontend-to-webapp
@@ -74,4 +74,4 @@ jobs:
         app-name: 'microserviciosUDFront'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_368122806a924c5cbe1c2ffd7db9558d }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_c3c234c5affe4e75ae5dc56802c7adbd }}/scvanegasa/frontend:${{ github.sha }}'
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_c3c234c5affe4e75ae5dc56802c7adbd }}/scvanegasa/frontend::latest'
